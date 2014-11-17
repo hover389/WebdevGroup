@@ -1,5 +1,6 @@
 html{
-	height:100%;
+	
+	height: 100%;
 }
 body{
 	
@@ -8,12 +9,6 @@ body{
 	
 }
 
-#container{
-	margin-left: 10%;
-	margin-right: 10%;
-	height: 100%;
-	
-}
 #navBar{
 	position: fixed;
 	top: 0px;
@@ -27,7 +22,10 @@ body{
 	margin-bottom: 10px;
 	text-align: center;
 	font-size: 30px;
-	 
+}
+
+#spanTitle{
+	border: 5px solid #3399FF;
 }
 
 #tableNav{
@@ -41,64 +39,13 @@ body{
 	background-color: green;
 }
 
-#spanTitle{
-	border: 5px solid #3399FF;
-}
-
-#picDiv{
-	margin-top: 10px; 
-	margin-bottom: 10px;
-	height: 350px;
-	background-color: white;
-}
-
-#mainPic{
-	width:100%;
-	height: 100%;
-}
-
-#welcome{
-	margin-top: 10px; 
-	margin-bottom: 10px;
-	text-align: center;
-	border: 3px solid #3399FF;
-}
-
-#welcomeTitle{
-	font-size: 20px;
-	
-}
-
-#pics{
-	height: 300px;
-	margin-top: 10px; 
-	margin-bottom: 10px;
-	overflow: scroll;
-}
-
-#tablePics{
-	table-layout: fixed;
-	height: 100%;
-	width: 100%;
-	border-collapse: collapse;
-	
-	
-}
-.cellPics{
-	width: 33%;
-	height: 280px;
-	border: 3px solid #3399FF;
-	background-color: white;
-}
-
-#news{
-	border: 3px solid #3399FF;
-	margin-bottom: 5px;
+#login{
+	background-color: #FF9D5C;
 }
 
 #footer{
 	position: relative;
-	bottom:0;
+	bottom: 0;
 	background-color: #FFFFCC;
 	margin-top: 10px;
 	height: 70px;
@@ -124,17 +71,59 @@ body{
 	text-align: center;
 }
 
-#login{
-	background-color: #FF9D5C;
+#container{
+	
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 100%;	
 }
 
-.picSize{
+#calDiv{
+	
+	
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.calTable{
+	
+	margin-top: 15px;
+	margin-bottom:10px;
 	height: 100%;
 	width: 100%;
+	border-collapse: collapse;
 }
 
-#newsTitle{
+.calCell{
+	padding:0px;
+	width:10%;
+	height: 100px;
+	border: 3px solid #3399FF;
+	background-color:#CCFFFF;
+	text-align: left;
+	vertical-align: text-top;
+}
+
+.month{
+	margin-bottom: 10px;
+	margin-top: 40px;
 	text-align: center;
-	font-size: 18px;
+}
+
+.spanMonth{
+	border: 3px solid #3399FF;
+	font-size: 20px;
+}
+
+.numMonth{
+	text-align: left;
+	vertical-align:text-top;
+}
+.celDiv{
+	height: 100px;
+	position: relative;
+}
+
+.eventName{
+	text-align: center;
 }
 
