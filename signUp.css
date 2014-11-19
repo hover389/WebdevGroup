@@ -1,0 +1,245 @@
+html{
+	height:100%;
+}
+body{
+	
+	margin: 0px;
+	background-color: grey;
+	/*background-image: url(hover2.jpg);
+	background: no-repeat;
+	background-size: cover;*/
+}
+
+#container{
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 100%;
+	
+}
+#navBar{
+	position: fixed;
+	top: 0px;
+	height: 50px;	
+	width: 100%;
+	background-color: gray;
+}
+
+#title{
+	margin-top: 60px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 30px;
+	 
+}
+
+#tableNav{
+	table-layout: fixed;
+	width: 100%;
+	height: 100%
+}
+
+.cell{
+	text-align: center;
+	background-color: green;
+}
+
+#spanTitle{
+	border: 5px solid #3399FF;
+}
+
+#picDiv{
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	height: 350px;
+	background-color: white;
+}
+
+#mainPic{
+	width:100%;
+	height: 100%;
+}
+
+#welcome{
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	text-align: center;
+	border: 3px solid #3399FF;
+}
+
+#welcomeTitle{
+	font-size: 20px;
+	
+}
+
+#pics{
+	height: 300px;
+	margin-top: 10px; 
+	margin-bottom: 10px;
+	overflow: scroll;
+}
+
+#tablePics{
+	table-layout: fixed;
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+	
+	
+}
+.cellPics{
+	width: 33%;
+	height: 280px;
+	border: 3px solid #3399FF;
+	background-color: white;
+}
+
+#news{
+	border: 3px solid #3399FF;
+	margin-bottom: 5px;
+}
+
+#footer{
+	position: absolute;
+	bottom: 0em;
+	background-color: #FFFFCC;
+	margin-top: 10px;
+	height: 70px;
+	border: 3px solid #3399FF;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+#val{
+	margin-left: auto;
+	margin-right: auto;
+	table-layout: fixed;
+	width: 40%;
+	text-align: center;
+}
+
+#disc{
+	margin-top:2px;
+	margin-bottom:2px;
+	font-weight: bold;
+	text-decoration: underline;
+	text-align: center;
+}
+
+#login{
+	background-color: #FF9D5C;
+}
+
+.picSize{
+	height: 100%;
+	width: 100%;
+}
+
+#newsTitle{
+	text-align: center;
+	font-size: 18px;
+}
+
+fieldset{
+	margin-top: 5em;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 5px solid #3399FF;
+}
+
+legend{
+	font-size: 24pt;
+}
+
+
+#addressLabel{
+	margin-left: 25px;	
+}
+
+#cityLabel{
+	margin-left: 50px;
+}
+
+#stateLabel{
+	margin-left: 45px;
+}
+
+#zipcodeLabel{
+	margin-left: 8px;
+}
+
+#zipcodeLabel{
+	margin-left: 17px;
+}
+
+#phoneLabel{
+	margin-left: 36px;
+}
+
+#listDiv{
+	text-align: left;
+	width: 78%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+#emailLabel{
+	margin-left: 204px;
+}
+
+#referenceLabel{
+	margin-left: 5em;
+}
+
+#hovercraftLabel{
+	margin-left: 90px;
+}
+
+#usernameLabel{
+	margin-left: 98px;
+}
+
+#passwordLabel{
+	margin-left: 270px;
+}
+
+#retypeLabel{
+	margin-left: 70px;
+}
+
+input[type="text"]{
+	width: 210px;
+}
+
+.dropList{
+	width: 220px;
+}
+
+select{
+	font-size: 12pt;
+	margin-bottom: 1.3em;
+}
+
+span{
+	margin-bottom: 1.3em;
+}
+
+input{
+	margin-bottom: 1.3em;
+}
+
+#button{
+	text-align: center;
+}
+
+input[type="submit"]{
+	width: 15%;
+	background-color: red;
+	height: 35px;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
