@@ -17,6 +17,10 @@ body{
 	background-color: gray;
 }
 
+#login{
+	background-color: #FF9D5C;
+}
+
 #tableNav{
 	table-layout: fixed;
 	width: 100%;
@@ -28,6 +32,13 @@ body{
 	background-color: green;
 }
 
+#container{
+	
+	margin-left: 10%;
+	margin-right: 10%;
+	height: 100%;	
+}
+
 #title{
 	margin-top: 60px;
 	margin-bottom: 10px;
@@ -37,4 +48,14 @@ body{
 
 #spanTitle{
 	border: 5px solid #3399FF;
+}
+
+#infoDiv{
+	border: 5px solid #3399FF;
+	width 100%;
+}
+
+.info{
+	margin-left: 10%;
+	font-size: 20px;
 }
