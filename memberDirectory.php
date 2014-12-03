@@ -7,6 +7,9 @@
                 <meta name= "robots" content="noindex, nofollow"/>
         </head>
         <body>
+			<?php
+				session_start();
+			?>
                 <div id="navBar">
                         <table id="tableNav">
                         <tr>
@@ -17,7 +20,20 @@
                         <td class="cell"> <a id="videos" href="videos.html">Videos</a> </td>
                         <td class="cell"> <a id="photos" href="photos.html">Photos </a> </td>
                         <td class="cell"> <a id="directory" href="memberDirectory.html">Member Directory </a> </td>
-                        <td class="cell" id="login"> MemberLogin drop down </td>
+                        <td class="cell" id="login">
+							<?php
+							if(isset($_SESSION['uid'])){
+							?>
+								<a id="login" href="logout.php">Log Out </a>
+							<?php
+							}
+							else{
+							?>
+								<a id="login" href="login.php">Log In </a>
+							<?php
+							}
+						?>
+						</td>
                         </tr>
                         </table>
                 </div>
