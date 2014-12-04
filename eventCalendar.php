@@ -25,7 +25,7 @@
 						<td class="cell"> <a id="directory" href="memberDirectory.php">Member Directory </a> </td>
 						<td class="cell" id="login">
 							<?php
-							if(isset($_SESSION['uid'])){
+							if(isset($_SESSION['memLevel'])){
 							?>
 								<a id="login" href="logout.php">Log Out </a>
 							<?php
@@ -44,7 +44,6 @@
 		<div id = "title">
 				<p><span id="spanTitle"> Upcoming Events Calendar</span></p>
 		</div>
-			
 			<div id="calDiv">
 			<p class="month"><span class="spanMonth">April 2015</span></p>
 				<table class="calTable">

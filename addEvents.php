@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<link href="eventSignUp.css" type="text/css" rel="stylesheet"/>
+	<link href="addEvents.css" type="text/css" rel="stylesheet"/>
 	<title>Event Sign Up</title>
 	<meta charset="UTF-8">
 	<meta name= "robots" content="noindex, nofollow"/>
@@ -40,6 +40,13 @@
 				</table>
 		</div>
 		<div id = "container">
+			<?php
+				if($_SESSION['memLevel']!="admin"||$_SESSION['memLevel']!="superAdmin"){
+					?><p id = "error"> you dont have the right privileges to add an event</p>
+					<?php
+				}
+				else{
+			?>
 			<div id = "title">
 				<p><span id="spanTitle"> Event Sign Up</span></p>
 			</div>
@@ -73,17 +80,14 @@
 					{
 						echo $sql . "<br>" . $e->getMessage();
 					}
-					
-					if(isset($_SESSION['memLevel'])){
-						?><div id="button">
-					<input type="submit" name="submitButton" value="Sign up for Event"/> <br/>
-					</div>
-					<?php
-					}
 					?>
-					
-					
+					<div id="button">
+					<input type="submit" name="submitButton" value="Add New Event"/> <br/>
+					</div>	
 			</div>
+			<?php
+			}
+			?>
 		</div>
 		<div id="footer">
 			 <table id="val">

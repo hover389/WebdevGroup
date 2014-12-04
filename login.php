@@ -6,11 +6,13 @@
 	<title>Log In</title>
 	<meta charset="UTF-8">
 	<meta name= "robots" content="noindex, nofollow"/>
+	<script src= "login.js" type="text/javascript"></script>
 </head>
 	
 	<body>
 		<?php
 			session_start();
+			
 		?>
 		<div id="navBar">
 				<table id="tableNav">
@@ -24,7 +26,7 @@
 						<td class="cell"> <a id="directory" href="memberDirectory.php">Member Directory </a> </td>
 						<td class="cell" id="login">
 							<?php
-							if(isset($_SESSION['uid'])){
+							if(isset($_SESSION['memLevel'])){
 							?>
 								<a id="loginLink" href="logout.php">Log Out </a>
 							<?php
@@ -46,12 +48,12 @@
 			
 			<div id = "loginForm">
 				<div id="textForm">
-					<form action="loginCheck.php" method="POST">
-					Username: <input  name="uid"><br><br>
-					Password: <input name="password" type="password"><br><br>
-					<input type="submit" value="submit"></input>
+					Username: <input  id="uid"><br><br> 
+					Password: <input id ="password" type="password"> 
+					<br><br>
+					<input type="submit" onclick = "checkValid()" value="submit"></input>
+					<p id = "error"> </p>
 					
-					</form>
 				</div>
 			</div>
 		</div>

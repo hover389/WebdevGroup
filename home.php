@@ -11,6 +11,7 @@
 	<body>
 		<?php
 		session_start();
+		
 		?>
 		<div id="navBar">
 				<table id="tableNav">
@@ -24,7 +25,7 @@
 						<td class="cell"> <a id="directory" href="memberDirectory.php">Member Directory </a> </td>
 						<td class="cell" id="login">
 							<?php
-							if(isset($_SESSION['uid'])){
+							if(isset($_SESSION['memLevel'])){
 							?>
 								<a id="login" href="logout.php">Log Out </a>
 							<?php
