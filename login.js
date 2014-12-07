@@ -4,7 +4,6 @@ function checkValid(){
 	var userName = document.getElementById("uid").value;
 	var password = document.getElementById("password").value;
 	var param = "uid="+ userName + "&password="+ password;
-	//var param = "fname=Henry";
 	var ajax;
 	if (window.XMLHttpRequest) {
         ajax = new XMLHttpRequest();

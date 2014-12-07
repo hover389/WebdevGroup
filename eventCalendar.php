@@ -18,10 +18,10 @@
 					<tr>
 						<td class="cell"> <a id="home" href="home.php">Home </a> </td>
 						<td class="cell"> <a id="benefits" href="benefits.html">Member Benefits </a> </td>
-						<td class="cell"> <a id="signUp" href="signUp.html">Member Sign Up </a> </td>
+						<td class="cell"> <a id="signUp" href="signUp.php">Member Sign Up </a> </td>
 						<td class="cell"> <a id="events" href="eventCalendar.php">Events </a> </td>
 						<td class="cell"> <a id="videos" href="videos.html">Videos</a> </td>
-						<td class="cell"> <a id="photos" href="photos.html">Photos </a> </td>
+						<td class="cell"> <a id="photos" href="editMember.php">Profile </a> </td>
 						<td class="cell"> <a id="directory" href="memberDirectory.php">Member Directory </a> </td>
 						<td class="cell" id="login">
 							<?php

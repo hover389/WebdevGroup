@@ -4,7 +4,8 @@ html{
 body{
 	
 	margin: 0px;
-	background-color: grey;
+	background-image: url("hover10.jpg");
+	background-size: 100% 100%;
 	
 }
 
@@ -19,7 +20,6 @@ body{
 	top: 0px;
 	height: 50px;	
 	width: 100%;
-	background-color: gray;
 }
 
 #title{

@@ -21,6 +21,7 @@
 						}
 						else{
 							$_SESSION["memLevel"] = $row[12];
+							$_SESSION["uid"] = $row[0];
 							echo "success";
 						}
 					}

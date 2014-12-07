@@ -2,11 +2,11 @@
 
 <html>
 <head>
-	<link href="addEvents.css" type="text/css" rel="stylesheet"/>
-	<title>Event Sign Up</title>
+	<link href="deleteMember.css" type="text/css" rel="stylesheet"/>
+	<title>Delete Member</title>
 	<meta charset="UTF-8">
 	<meta name= "robots" content="noindex, nofollow"/>
-	<script src= "addEvents.js" type="text/javascript"></script>
+	<script src= "deleteMember.js" type="text/javascript"></script>
 </head>
 	
 	<body>
@@ -42,31 +42,41 @@
 		</div>
 		<div id = "container">
 			<?php
+			$_SESSION['memLevel'] = "superAdmin";
 			if(isset($_SESSION['memLevel'])){
-				if(strcmp($_SESSION['memLevel'],"admin")===0||strcmp($_SESSION['memLevel'],"superAdmin")===0){
+				if(strcmp($_SESSION['memLevel'],"superAdmin")===0){
 					?>
 				<div id = "title">
-					<p><span id="spanTitle"> Add Event</span></p>
+					<p><span id="spanTitle"> Delete or change member access level</span></p>
 				</div>
 				
 				<div id="infoDiv">
 					<br><br>
-					Name of event: <input  id="name"><br><br> 
-					Date: <input id ="date"><br><br>
-					Location: <input id ="loc"><br><br>
-					Cost: <input id ="cost"><br><br>
-					Who to contact: <input id ="contact"><br><br>
-					Description: <textarea rows="5" cols="50" id="desc"></textarea>
-				<div id="button">
-					<input type="submit" name="submitButton" onclick="addEvent()" value="Add New Event"/> <br/>
-					<p id="status"></p>
-				</div>
+					<p> Delete Member</p><br>
+					Member user name: <input  id="deleteUser"><br><br> 
+					<div id="button">
+						<input type="submit" name="submitButton1" onclick="deleteMember()" value="submit"/> <br/>
+						<p id="memStatus"></p>
+					</div>
+					</p> Change member access level</p>
+					Member user name: <input  id="levelUser"><br><br> 
+					<p>Select level of access</p>
+					<select>
+					  <option value="member" name="choice">Member</option>
+					  <option value="admin" name="choice">Admin</option>
+					  <option value="superAdmin" name="choice">Super Admin</option>
+					</select> 
+					<div id="button">
+						<input type="submit" name="submitButton2" onclick="levelChange()" value="submit"/> <br/>
+						<p id="levelStatus"></p>
+					</div>
 				</div>
 				<?php
 					
+					
 				}
 				else{
-				?><p id = "error"> you dont have the right privileges to add an event</p>
+					?><p id = "error"> you dont have the right privileges to add an event</p>
 					<?php
 					}
 			}

@@ -3,9 +3,10 @@ html{
 	height: 100%;
 }
 body{
-	
+	height:100%;
 	margin: 0px;
-	background-color: grey;
+	background-image: url("hover10.jpg");
+	background-size: 100% 100%;
 	
 }
 
@@ -14,7 +15,6 @@ body{
 	top: 0px;
 	height: 50px;	
 	width: 100%;
-	background-color: gray;
 }
 
 #login{
@@ -33,10 +33,10 @@ body{
 }
 
 #container{
-	
 	margin-left: 10%;
 	margin-right: 10%;
 	height: 100%;	
+	margin-bottom:10px;
 }
 
 #title{
@@ -61,7 +61,7 @@ body{
 }
 
 #footer{
-	position: absolute;
+	position: relative;
 	bottom:0;
 	background-color: #FFFFCC;
 	margin-top: 10px;

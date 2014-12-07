@@ -3,14 +3,25 @@ height: 100%;
 }
 body{
 margin: 0px;
-background-color: grey;
+height:100%;
+background-image: url("hover10.jpg");
+background-size: 100% 100%;
 }
 #navBar{
 position: fixed;
 top: 0px;
 height: 50px;
 width: 100%;
-background-color: gray;
+}
+
+#container{	
+
+margin-left: 10%;
+margin-right: 10%;
+height: 100%;	
+}
+
+#section{
 }
 #tableNav{
 table-layout: fixed;

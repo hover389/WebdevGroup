@@ -18,10 +18,10 @@
 					<tr>
 						<td class="cell"> <a id="home" href="home.php">Home </a> </td>
 						<td class="cell"> <a id="benefits" href="benefits.html">Member Benefits </a> </td>
-						<td class="cell"> <a id="signUp" href="signUp.html">Member Sign Up </a> </td>
+						<td class="cell"> <a id="signUp" href="signUp.php">Member Sign Up </a> </td>
 						<td class="cell"> <a id="events" href="eventCalendar.php">Events </a> </td>
 						<td class="cell"> <a id="videos" href="videos.html">Videos</a> </td>
-						<td class="cell"> <a id="photos" href="photos.html">Photos </a> </td>
+						<td class="cell"> <a id="photos" href="editMember.php">Profile </a> </td>
 						<td class="cell"> <a id="directory" href="memberDirectory.php">Member Directory </a> </td>
 						<td class="cell" id="login">
 							<?php
@@ -57,7 +57,11 @@
 				hovercrafters around the USA and the world. We are more than just a website and a newsletter - our members 
 				cruise our nations waterways.  Our members race.  Our members build fully functional hovercrafts.  Our members
 				give demonstrations to schools, and much more!  We encourage you to join our club and experience all of the many
-				opportunities to enjoy hovercrafting.  Our website and is full of resources.				Our forums allow members to communicate ideas and get assistance.  Create your own photo pages, have a build diary or submit your favorite video for posting. Want to find a member near you?  You can check out the membership directory to contact someone in your area.  If you have any questions or concerns please Contact Us.</p>
+				opportunities to enjoy hovercrafting.  Our website and is full of resources.			
+				Our forums allow members to communicate ideas and get assistance.  Create your own photo pages, have a build diary or submit your favorite
+				video for posting. Want to find a member near you?  You can check out the membership directory to contact someone in your area. 
+				If you have any questions or concerns please Contact Us. For more information about hovercraft try these links! 
+				<a href = "http://www.hovercraft.com"> Hovercraft.com</a> or <a href = "http://en.wikipedia.org/wiki/Hovercraft"> Wikipedia </a></p>
 			</div>
 			
 			<div id="pics">

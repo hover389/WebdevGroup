@@ -6,6 +6,7 @@
 	<title>Event Sign Up</title>
 	<meta charset="UTF-8">
 	<meta name= "robots" content="noindex, nofollow"/>
+	<script src= "eventSignUp.js" type="text/javascript"></script>
 </head>
 	
 	<body>
@@ -17,10 +18,10 @@
 					<tr>
 						<td class="cell"> <a id="home" href="home.php">Home </a> </td>
 						<td class="cell"> <a id="benefits" href="benefits.html">Member Benefits </a> </td>
-						<td class="cell"> <a id="signUp" href="signUp.html">Member Sign Up </a> </td>
+						<td class="cell"> <a id="signUp" href="signUp.php">Member Sign Up </a> </td>
 						<td class="cell"> <a id="events" href="eventCalendar.php">Events </a> </td>
 						<td class="cell"> <a id="videos" href="videos.html">Videos</a> </td>
-						<td class="cell"> <a id="photos" href="photos.html">Photos </a> </td>
+						<td class="cell"> <a id="photos" href="editMember.php">Profile </a> </td>
 						<td class="cell"> <a id="directory" href="memberDirectory.php">Member Directory </a> </td>
 						<td class="cell" id="login">
 							<?php
@@ -66,21 +67,24 @@
 						<p class = "info"><br /><?=  "Cost: ".$row[2]; ?> </p>
 						<p class = "info"><br /><?=  "Who to contact: ".$row[6]; ?> </p>
 						<p class = "info"><br /><?=  "Description: ".$row[7]; ?> </p>
-					
 					<?php
+						if(isset($_SESSION['memLevel'])){
+							?><div id="button">
+							<input type="submit" onclick="eventSignUp()" name="submitButton" value="Sign up for Event"/> <br/>
+							<p id="signedUp"> </p>
+							<p hidden id="sessionId"><?php echo $_SESSION["uid"]; ?> </p>
+							<p hidden id="eventName"><?php echo $row[0]; ?> </p>
+							</div>
+						<?php
+						}
 					}
 					catch(PDOException $e)
 					{
 						echo $sql . "<br>" . $e->getMessage();
 					}
 					
-					if(isset($_SESSION['memLevel'])){
-						?><div id="button">
-					<input type="submit" name="submitButton" value="Sign up for Event"/> <br/>
-					</div>
-					<?php
-					}
 					?>
+					
 					
 					
 			</div>

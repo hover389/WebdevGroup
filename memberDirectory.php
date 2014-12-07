@@ -38,13 +38,16 @@
                         </table>
                 </div>
                 <div id = "container">
+					<div id="section">
                         <div id = "title">
                                 <p><span id="spanTitle">Membership Directory</span></p>
                         </div>
+						
                         <div>
                         <div id = "members">
                                 <table id = "membersTable">
                                 <?php
+								
                                         $db = new PDO("mysql:dbname=jindrj77;host=localhost","jindrj77","Soccer35");
                                         $sql = "select userName,firstname,lastName,email from memberInfo";
 
@@ -55,16 +58,20 @@
                                                 '<br />First Name: '.$row[1].
                                                 '<br />Last Name: '.$row[2].
                                                 '<br />Email: <a href="mailto:>'.$row[3].'">'.$row[3].'</a>';
-                                        }?>
+                                        }
+								
+										?>
                                         </tr><?
 
                                 ?>
                                 </table>
                         </div>
 
+					</div>
+					</div>
+					
                 </div>
-                </div>
-
+				
                 <div id="footer">
                         <table id="val">
                                 <tr>

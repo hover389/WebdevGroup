@@ -14,4 +14,5 @@
 	session_start();
 	session_destroy();
 ?>
-	
+	</body>
+</html>
